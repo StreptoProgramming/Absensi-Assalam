@@ -21,7 +21,11 @@ if(isset($_POST['uid'])){
 
 			}
 			else {
+<<<<<<< HEAD
 				$handlesalin=mysqli_query($conn, "select * from absensi where namasiswa='$namasiswa' and tanggal='$tanggal'and kelas='$kelas'");
+=======
+				$handlesalin=mysqli_query($conn, "select * from absensi where namasiswa='$namasiswa' and tanggal='$tanggal'");
+>>>>>>> 5a33b7edd8d97ce44d95598489d67819edbd136a
 				$hitunghandle=mysqli_num_rows($handlesalin);
 				if($hitunghandle<=0){
 					$wktmasuk=strtotime($r['waktumulaimasuk']);
